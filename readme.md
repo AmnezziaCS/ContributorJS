@@ -40,7 +40,7 @@ npm install
 **The following values are not mandatory** :
 - `GIT_REPOSITORY` : The remote repository you want changes to appear on. If left empty, you will have to push changes by hand. To see how you should create it, go to [this part](#hostRepo).
 - `MAX_COMMITS_PER_DAY` : The maximum amount of commits the script will create in a day (if left empty, *default value* is 6). Note that commits vary between 0 and `MAX`.
-- `COMMIT_ON_WEEKENDS` : Wether or not the script should create commits on weekends (`NO` or `YES`) defaults to no if empty.
+- `COMMIT_ON_WEEKENDS` : Wether or not the script should create commits on weekends (`NO` or `YES`) defaults to `NO` if empty.
 
 **Here is an example** :
 
