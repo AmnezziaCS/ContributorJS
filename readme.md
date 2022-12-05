@@ -1,6 +1,6 @@
 # ContributorJS ✅
 
-### A simple tool written completely in NodeJS that will generate Git activity for your profile.
+> A simple script that will generate contributions for your profile.
 
 ![](./medias/beforeafter.jpg)
 
