@@ -1,0 +1,14 @@
+{
+  "name": "contributorjs",
+  "version": "1.0.0",
+  "description": "A simple tool that will fill up your GitHub graph",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amnezzia",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
