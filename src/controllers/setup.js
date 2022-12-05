@@ -1,12 +1,22 @@
 const fs = require("fs");
 const gitConfig = require("../commands/gitConfig");
 const gitInit = require("../commands/gitInit");
+const deleteFolderRecursive = require("../utils/deleteFolderRecursive");
+
+const dir = `./tmp/`;
 
 function setup() {
   gitConfig();
+
+  if (fs.existsSync(dir)) {
+    deleteFolderRecursive(dir);
+    console.log(`Deleted contents of ${dir}`);
+  }
+  fs.mkdirSync(dir);
+
   gitInit();
   fs.writeFileSync(
-    `${process.env.TARGET_FOLDER_PATH}/readme.md`,
+    `${dir}/readme.md`,
     ``,
     {
       encoding: "utf8",

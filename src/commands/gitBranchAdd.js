@@ -2,7 +2,7 @@ const { execSync } = require("child_process");
 
 function gitBranchAdd() {
   execSync(`git branch -M main`, {
-    cwd: process.env.TARGET_FOLDER_PATH,
+    cwd: `./tmp`,
   });
   return console.log(`Branch successfully set to main.`);
 }

@@ -4,7 +4,7 @@ function gitCommit(commitMessageDate, commitDate) {
   execSync(
     `git commit -m"doc(readme): ${commitMessageDate}" --date="${commitDate}"`,
     {
-      cwd: process.env.TARGET_FOLDER_PATH,
+      cwd: `./tmp`,
     }
   );
   return console.log(`Changes successfully commited for ${commitDate}.`);

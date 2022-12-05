@@ -36,7 +36,6 @@ npm install
 
 **In order for the script to function you will have to fill in** : 
 - `GIT_USER_EMAIL` : Your Git email.
-- `TARGET_FOLDER_PATH` : The path of the folder you want the created repository to appear in (an empty one 😉).
 
 **The following values are not mandatory** :
 - `GIT_REPOSITORY` : The remote repository you want changes to appear on. If left empty, you will have to push changes by hand. To see how you should create it, go to [this part](#hostRepo).
@@ -47,7 +46,6 @@ npm install
 
 ```.env
 GIT_USER_EMAIL = myamazingemail@test.com
-TARGET_FOLDER_PATH = C:/Users/amnezziaa/documents/test
 GIT_REPOSITORY = https://github.com/amnezziaa/myamazingrepository.git
 MAX_COMMITS_PER_DAY = 9
 COMMIT_ON_WEEKENDS = NO
@@ -73,7 +71,14 @@ Once all the needed steps are completed, you can run the script with the command
 node .
 ```
 
-If it runs smoothly, you should get a confirmation message at the end. Otherwise it most likely means you got an error.
+#### Temp folder :
+A /tpm folder is going to be created in your ./ContributorJS/ folder. It will contain the local repository with all the commits. 
+
+If you chose to **not link** a `repository` in .env meaning you wanted to push changes **yourself**. The ./tmp/ folder is where you will find the commits to push to your remote repository.
+
+#### Success run :
+
+If the script runs smoothly, you should get a confirmation message at the end. Otherwise it most likely means you got an error.
 
 The activity might take a bit of time to appear on your profile due to the fact that Git has to process all the data before displaying it.
 

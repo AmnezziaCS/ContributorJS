@@ -1,9 +1,9 @@
 const { execSync } = require("child_process");
 
 function gitInit() {
-  execSync("git init -b main", { cwd: process.env.TARGET_FOLDER_PATH });
+  execSync("git init -b main", { cwd: `./tmp` });
   execSync(`git config core.autocrlf false`, {
-    cwd: process.env.TARGET_FOLDER_PATH,
+    cwd: `./tmp`,
   });
   return console.log(`Successfully initialized the repo.`);
 }

@@ -6,7 +6,7 @@ function changeFile(commitDate) {
   const commitMessageDate = commitDate.toLocaleDateString();
 
   fs.appendFileSync(
-    `${process.env.TARGET_FOLDER_PATH}/readme.md`,
+    `./tmp/readme.md`,
     `${commitDate}\n\n`,
     (err) => {
       if (err) {
