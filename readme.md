@@ -90,8 +90,6 @@ If you can't resolve it check in order :
 - That you set the correct **email** in `.env`
 - That you gave the correct **repository** link in `.env`
 - That the repository you created is **clean**
-- That you gave the correct **target folder path** in `.env`
-- That the **target folder** is **empty**
 - That you **followed the setup guide correctly**
 
 If the problem comes from elsewhere, don't hesitate to create an issue on this repository. I will look into it !
