@@ -29,7 +29,7 @@ You will have to execute the following commands in order to get the script on yo
 ```sh
 git clone https://github.com/amnezziaa/ContributorJS.git
 cd ./ContributorJS/
-npm install
+npm ci
 ```
 
 ### Fill in the example.env file
