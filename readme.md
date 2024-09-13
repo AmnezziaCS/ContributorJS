@@ -4,15 +4,15 @@
 
 ![Before / after graph](./medias/beforeafter.jpg)
 
-## How does it work ?
+## How does it work?
 
 The idea behind the script is to fill up your Git graph by creating commits back in time. All you have to do is run the script once and wait for the changes to appear on your graph.
 
 ### Privacy settings
 
-You can choose to set the created repository *Private* or *Public*. **It will not affect your graph display at all.**
+You can choose to set the created repository _Private_ or _Public_. **It will not affect your graph display at all.**
 
-The only thing you will have to do if you want the repository to be *private* is to turn the private contribution setting on.
+The only thing you will have to do if you want the repository to be _private_ is to turn the private contribution setting on.
 
 ![Private contribution setting](./medias/privatecontribution.png)
 
@@ -27,28 +27,28 @@ You will need to have [NodeJS](https://nodejs.org/en/) and [Git](https://git-scm
 You will have to execute the following commands in order to get the script on your machine.
 
 ```sh
-git clone https://github.com/amnezziaa/ContributorJS.git
+git clone https://github.com/AmnezziaCS/ContributorJS.git
 cd ./ContributorJS/
 npm ci
 ```
 
 ### Fill in the example.env file
 
-**In order for the script to function you will have to fill in** :
+**In order for the script to function you will have to fill in**:
 
-- `GIT_USER_EMAIL` : Your Git email.
+- `GIT_USER_EMAIL`: Your Git email.
 
-**The following values are not mandatory** :
+**The following values are not mandatory**:
 
-- `GIT_REPOSITORY` : The remote repository you want changes to appear on. If left empty, you will have to push changes by hand. To see how you should create it, go to [this part](#hostRepo).
-- `MAX_COMMITS_PER_DAY` : The maximum amount of commits the script will create in a day (if left empty, *default value* is 6). Note that commits vary between 0 and `MAX`.
-- `COMMIT_ON_WEEKENDS` : Wether or not the script should create commits on weekends (`NO` or `YES`) defaults to `NO` if empty.
+- `GIT_REPOSITORY`: The remote repository you want changes to appear on. If left empty, you will have to push changes by hand. To see how you should create it, go to [this part](#hostRepo).
+- `MAX_COMMITS_PER_DAY`: The maximum amount of commits the script will create in a day (if left empty, _default value_ is 6). Note that commits vary between 0 and `MAX`.
+- `COMMIT_ON_WEEKENDS`: Wether or not the script should create commits on weekends (`NO` or `YES`) defaults to `NO` if empty.
 
-**Here is an example** :
+**Here is an example**:
 
 ```.env
 GIT_USER_EMAIL = myamazingemail@test.com
-GIT_REPOSITORY = https://github.com/amnezziaa/myamazingrepository.git
+GIT_REPOSITORY = https://github.com/AmnezziaCS/myamazingrepository.git
 MAX_COMMITS_PER_DAY = 9
 COMMIT_ON_WEEKENDS = NO
 ```
@@ -89,7 +89,7 @@ The activity might take a bit of time to appear on your profile due to the fact 
 
 If the script doesn't go through, you should **get an error in your cmd**.
 
-If you can't resolve it check in order :
+If you can't resolve it, make sure:
 
 - That you set the correct **email** in `.env`
 - That you gave the correct **repository** link in `.env`
