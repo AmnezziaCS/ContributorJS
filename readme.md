@@ -1,7 +1,7 @@
 # ContributorJS 🟩
 
 ![before/after graph](./medias/beforeafter.jpg)
-> Example of a git graph before and after using the script
+_- Example of a git graph before and after using the script_
 
 ## Table of contents
 
@@ -11,8 +11,8 @@
   - [Installation](#installation)
   - [Fill in the `.env.example` file](#fill-in-the-envexample-file)
     - [Example of a filled `.env` file](#example-of-a-filled-env-file)
-    - [Run the script](#run-the-script)
-      - [`/tmp` folder](#tmp-folder)
+  - [Run the script](#run-the-script)
+    - [`/tmp` folder](#tmp-folder)
 - [Troubleshooting 🔧](#troubleshooting-)
 
 ## How does it work?
