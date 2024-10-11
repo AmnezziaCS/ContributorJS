@@ -52,7 +52,7 @@ To make the script work, you will have to fill in the `.env` file with your info
 
 - `GIT_REPOSITORY`: The link to the repository you want to push the commits to. If left empty, the script will create a local repository that you'll have to push yourself.
 - `MAX_COMMITS_PER_DAY`: Defaults to `6` if empty. The maximum number of commits the script will create per day. Also note that the script will create a random number of commits between `0` and `MAX_COMMITS_PER_DAY`.
-- `COMMIT_ON_WEEKENDS`: Defaults to `NO` if empty. Whether or not you want the script to create commits on weekends.
+- `COMMIT_ON_WEEKENDS`: Defaults to `false` if empty. Whether or not you want the script to create commits on weekends.
 
 #### Example of a filled `.env` file
 
@@ -60,7 +60,7 @@ To make the script work, you will have to fill in the `.env` file with your info
 GIT_USER_EMAIL = myamazingemail@test.com
 GIT_REPOSITORY = https://github.com/AmnezziaCS/myamazingrepository.git
 MAX_COMMITS_PER_DAY = 9
-COMMIT_ON_WEEKENDS = NO
+COMMIT_ON_WEEKENDS = false
 ```
 
 Once the `.env.example` file is filled, you can rename it to `.env`.
